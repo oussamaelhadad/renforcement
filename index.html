@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Météo et les prévisions des prochains jours">
+
+    <meta name="author" content="Youcode">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./src/js/script.js" defer></script>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body class="p-8 space-y-4">
+ <h1 class="text-2xl font-bold">Mon gestionnaire de notes</h1>
+ <div id="notes-container" class="space-y-2">
+ <p class="note p-3 border rounded">Note A</p>
+ <p class="note p-3 border rounded">Note B</p>
+ <p class="note p-3 border rounded">Note C</p>
+ </div>
+ <div class="flex gap-2">
+ <input id="nouvelle-note" type="text"
+ placeholder="Écrire une note..." class="border p-2 rounded">
+ <button id="ajouter" class="bg-blue-600 text-white p-2 rounded">
+ Ajouter
+ </button>
+ </div>
+ <div>
+ <p>Choisir un thème :</p>
+ <label><input type="radio" name="theme" value="clair" checked> Clair</label>
+ <label><input type="radio" name="theme" value="sombre"> Sombre</label>
+ </div>
+ <button id="surligner" class="bg-yellow-200 p-2 rounded">
+ Surligner les notes
+ </button>
+ <button id="lire" class="bg-gray-200 p-2 rounded">
+ Lire le thème
+ </button>
+ <p id="resultat"></p>
+ <script src="script.js"></script>
+</body>
